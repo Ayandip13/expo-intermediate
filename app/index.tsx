@@ -1,12 +1,20 @@
-import { View, Text } from "react-native";
-import { Link } from "expo-router";
-const Index = () => {
+import { View, Text, StyleSheet } from 'react-native'
+import React from 'react'
+
+const index = () => {
   return (
-    <View style={{backgroundColor:'blue', flex:1, justifyContent:'center', alignItems:'center'}}>
-      <Text style={{fontSize:20, color:'white'}}>Hello From new App setup</Text>
-      <Link href={"/about"}>Go to about</Link>
+    <View>
+      <Text>index</Text>
     </View>
   )
 }
 
-export default Index
+const styles = StyleSheet.create({
+    container:{},
+    topContainer:{},
+    headerTitle:{},
+    card:{},
+    mainCard:{}
+})
+
+export default index
